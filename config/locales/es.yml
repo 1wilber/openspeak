@@ -1,0 +1,5 @@
+es:
+  sessions:
+    new:
+      title: "Iniciar sesión"
+      forgot_password: "¿Olvidaste tu contraseña?"
