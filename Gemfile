@@ -61,3 +61,5 @@ gem "decorators", "~> 1.0"
 gem "cssbundling-rails", "~> 1.4"
 
 gem "draper", "~> 4.0"
+
+gem "dotenv", "~> 3.1"

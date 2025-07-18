@@ -389,6 +389,7 @@ DEPENDENCIES
   cssbundling-rails (~> 1.4)
   debug
   decorators (~> 1.0)
+  dotenv (~> 3.1)
   draper (~> 4.0)
   jsbundling-rails
   kamal

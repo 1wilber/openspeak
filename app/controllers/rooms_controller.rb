@@ -2,21 +2,21 @@ class RoomsController < ApplicationController
   before_action :set_room, only: %i[ show edit update destroy ]
 
   def index
-    @rooms = Room.all
+    @rooms = Room.all.includes(:rooms_members)
   end
 
   def show
   end
 
   def new
-    @room = Current.user.rooms.new
+    @room = Current.user.owned_rooms.new
   end
 
   def edit
   end
 
   def create
-    @room = Current.user.rooms.new(room_params)
+    @room = Current.user.owned_rooms.new(room_params)
 
     if @room.save
       redirect_to @room, notice: "Room was successfully created."

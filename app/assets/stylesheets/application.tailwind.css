@@ -1,0 +1,11 @@
+@import "@fontsource-variable/montserrat";
+@import "tailwindcss";
+
+:root {
+    font-family: "Monserrat", sans-serif;
+}
+
+body {
+    max-width: 700px;
+    /* margin-inline: auto; */
+}
