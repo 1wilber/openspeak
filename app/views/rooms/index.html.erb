@@ -1,0 +1,15 @@
+<% content_for :title, t(".title") %>
+
+
+<div>
+    <h1><%= t(".title") %></h1>
+    <%= link_to new_room_path, class: "button primary" do %>
+      <i>add</i>
+    <% end %>
+</div>
+
+<article>
+    <ul class="list border">
+        <%= render @rooms %>
+    </ul>
+</article>

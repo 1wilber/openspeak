@@ -1,5 +1,14 @@
 es:
+  shared:
+    join: "Unirse"
   sessions:
     new:
       title: "Iniciar sesión"
       forgot_password: "¿Olvidaste tu contraseña?"
+  rooms:
+    index:
+      title: "Grupos"
+  activerecord:
+    attributes:
+      room:
+        name: "Nombre"
