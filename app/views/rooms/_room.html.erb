@@ -1,0 +1,11 @@
+<article>
+  <div>
+    <hgroup>
+        <h5><%= room.name %></h5>
+        <p><%= room.description %></p>
+    </hgroup>
+    <%= room.users.count %>
+  </div>
+
+  <%= room_join_or_show_link(room) %>
+</article>

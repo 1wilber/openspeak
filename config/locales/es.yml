@@ -1,0 +1,22 @@
+es:
+  save: "Guardar"
+  shared:
+    join: "Unirse"
+  sessions:
+    new:
+      title: "Iniciar sesión"
+      forgot_password: "¿Olvidaste tu contraseña?"
+  rooms:
+    actions:
+      new: "Crear sala"
+      join: "Unirse a la sala"
+      show: "Entrar a la sala"
+    index:
+      title: "Salas"
+      description: "Únete a conversacoines o crea tu propia sala"
+    new:
+      title: "Crear sala"
+  activerecord:
+    attributes:
+      room:
+        name: "Nombre"
