@@ -1,9 +1,6 @@
 <% content_for :title, t(".title") %>
 
-<hgroup class="text-center">
-  <h1><%= t(".title") %></h1>
-  <p><%= t(".description") %></p>
-</hgroup>
+<%= render_header(title: t(".title"), description: t(".description")) %>
 
 <section class="grid">
   <%= link_to t("rooms.actions.new"), new_room_path, role: :button %>

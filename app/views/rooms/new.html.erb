@@ -1,5 +1,5 @@
 <% content_for :title, t(".title") %>
 
-<h1><%= t(".title") %></h1>
+<%= render_header(title: t(".title")) %>
 
 <%= render "form", room: @room %>

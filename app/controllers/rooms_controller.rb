@@ -2,8 +2,11 @@ class RoomsController < ApplicationController
   before_action :set_room, only: %i[ show edit update destroy ]
 
   def index
-    @rooms = Room.all.includes(:rooms_members)
+    @rooms = RoomDecorator.decorate_collection(
+      Room.all.includes(:rooms_members)
+    )
   end
+
 
   def show
   end

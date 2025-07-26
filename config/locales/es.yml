@@ -20,3 +20,8 @@ es:
     attributes:
       room:
         name: "Nombre"
+  forms:
+    placeholders:
+      room:
+        name: "Nombre de la sala"
+      

@@ -3,10 +3,10 @@ class RoomDecorator < Draper::Decorator
 
   def join_or_show_link
     already_joined = Current.user.rooms.include?(self)
-    path = already_joined ? room : room_members_path(room.id)
-    label = already_joined ? t("rooms.actions.show") : t("rooms.actions.join")
+    path = already_joined ? room : h.room_members_path(room.id)
+    label = already_joined ? I18n.t("rooms.actions.show") : I18n.t("rooms.actions.join")
     method = already_joined ? :get : :post
 
-    link_to(label, path, class: "secondary", data: { turbo_method: method }, role: :button)
+    h.link_to(label, path, class: "secondary", data: { turbo_method: method }, role: :button)
   end
 end
